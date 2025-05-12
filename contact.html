@@ -1,16 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a custom quote or get in touch with our team." />
   <title>Contact | AffordableQuality FlatPacks</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-sans">
-  <main class="p-12 text-center">
-    <h1 class="text-4xl font-bold text-primary">Contact</h1>
-    <p class="mt-4 text-lg">Content for Contact goes here...</p>
-  </main>
+  
+  <nav class="bg-primary text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <i class="fas fa-ruler-combined text-2xl text-accent"></i>
+        <span class="text-xl font-bold">AffordableQuality<span class="text-secondary">FlatPacks</span></span>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="index.html" class="hover:text-secondary transition-all">Home</a>
+        <a href="services.html" class="hover:text-secondary transition-all">Services</a>
+        <a href="process.html" class="hover:text-secondary transition-all">Our Process</a>
+        <a href="gallery.html" class="hover:text-secondary transition-all">Gallery</a>
+        <a href="contact.html" class="bg-secondary px-4 py-2 rounded hover:bg-blue-600 transition-all">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-primary mb-4">Get Your Custom Quote</h2>
+        <div class="w-24 h-1 bg-secondary mx-auto"></div>
+      </div>
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" required>
+          </div>
+          <div class="mb-4">
+            <label for="project" class="block text-gray-700 font-bold mb-2">Project Type</label>
+            <select id="project" name="project" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" required>
+              <option value="">Select project type</option>
+              <option value="kitchen">Kitchen Cabinets</option>
+              <option value="bathroom">Bathroom Vanity</option>
+              <option value="wardrobe">Wardrobe</option>
+              <option value="office">Home Office</option>
+              <option value="entertainment">Entertainment Unit</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700 font-bold mb-2">Project Details</label>
+            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" required></textarea>
+          </div>
+          <button type="submit" class="w-full bg-secondary hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg transition-all">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-primary text-white py-12 mt-12">
+    <div class="text-center text-gray-400">
+      <p>&copy; 2025 AffordableQualityFlatPacks. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
