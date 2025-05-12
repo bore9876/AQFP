@@ -1,23 +1,759 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <meta name="description" content="Custom cut-to-size flat pack cabinetry by AffordableQuality FlatPacks. Kitchen cabinets, wardrobes, and vanities delivered Australia-wide.">
+  <meta name="keywords" content="custom cabinetry, flat pack cabinets, kitchen cabinets, wardrobe systems, bathroom vanities, AQFP, cut to size cabinetry, DIY cabinets, affordable cabinetry, Toowoomba">
+  <meta name="author" content="AffordableQuality FlatPacks">
+  <meta property="og:title" content="AffordableQuality FlatPacks | Custom Flat Pack Cabinetry" />
+  <meta property="og:description" content="Flat pack cabinetry made to fit your space perfectly. Kitchens, wardrobes, vanities, and more." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1556911220-e15b29be8c8f" />
+  <meta property="og:url" content="https://www.affordablequalityflatpacks.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AffordableQuality FlatPacks offers custom flat pack cabinetry tailored to your exact needs. Easy to assemble, high-quality materials, and cost-effective solutions." />
-  <meta name="keywords" content="custom flat pack cabinetry, kitchen cabinets, bathroom vanities, wardrobe storage, home office, entertainment units, DIY cabinets" />
-  <meta name="author" content="AffordableQuality FlatPacks" />
-  <meta property="og:title" content="AffordableQuality FlatPacks | Custom Flat Pack Cabinetry" />
-  <meta property="og:description" content="Precision-cut, high-quality flat pack cabinetry for every space. Built to fit, easy to assemble, and delivered to your door." />
-  <meta property="og:type" content="website" />
   <title>AffordableQuality FlatPacks | Custom Flat Pack Cabinetry</title>
-
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="aqfp-color-scheme.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2c3e50',
+            secondary: '#3498db',
+            thirdd: '#2c3e50',
+            forth: '#3498db',
+            accent: '#e74c3c',
+            wood: '#8B5A2B',
+          }
+        }
+      }
+    }
+  </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "AffordableQuality FlatPacks",
+  "url": "https://www.affordablequalityflatpacks.com",
+  "logo": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+61-7-4635-6095",
+    "contactType": "Customer Service",
+    "areaServed": "AU",
+    "availableLanguage": "English"
+  },
+  "sameAs": [
+    "https://www.facebook.com/",
+    "https://www.instagram.com/",
+    "https://www.pinterest.com/",
+    "https://www.houzz.com/"
+  ]
+}
+</script>
 </head>
 <body class="font-sans">
-  <!-- Include the rest of your optimized content here. -->
-  <!-- This is the updated and SEO-optimized version of your homepage. -->
-  <!-- Navigation, hero, features, services, etc. remain the same with improved heading tags and semantic layout. -->
+
+   <!-- Navigation -->
+    <nav class="bg-primary text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="images/AQFP.jpg" alt="Girl in a jacket" width="100" height="50">
+		    <span class="text-xl font-bold">AffordableQuality<span class="text-secondary">FlatPacks</span></span>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-secondary transition-all">Home</a>
+                    <a href="#services" class="hover:text-secondary transition-all">Services</a>
+                    <a href="#process" class="hover:text-secondary transition-all">Our Process</a>
+                    <a href="#gallery" class="hover:text-secondary transition-all">Gallery</a>
+                    <a href="#contact" class="bg-secondary px-4 py-2 rounded hover:bg-blue-600 transition-all">Get a Quote</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden">
+                <div class="flex flex-col space-y-4 mt-4">
+                    <a href="#home" class="block hover:text-secondary transition-all">Home</a>
+                    <a href="#services" class="block hover:text-secondary transition-all">Services</a>
+                    <a href="#process" class="block hover:text-secondary transition-all">Our Process</a>
+                    <a href="#gallery" class="block hover:text-secondary transition-all">Gallery</a>
+                    <a href="#contact" class="block bg-secondary px-4 py-2 rounded hover:bg-blue-600 transition-all text-center">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white min-h-screen flex items-center fade-in">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <div class="md:w-1/2">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Custom Cabinetry <span class="text-secondary">Made Simple</span></h1>
+                <p class="text-xl mb-8">Precision-cut flat pack cabinetry tailored to your exact specifications. Quality materials, perfect fit, easy assembly.</p>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="#contact" class="bg-secondary hover:bg-blue-600 text-white px-8 py-4 rounded font-bold transition-all">Get Started</a>
+                    <a href="#process" class="border-2 border-white hover:bg-white hover:text-primary px-8 py-4 rounded font-bold transition-all">How It Works</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Why Choose AQFP?</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center card-hover transition-all">
+                    <div class="text-4xl text-secondary mb-4">
+                        <i class="fas fa-tape"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Precision Measurements</h3>
+                    <p class="text-gray-600">Every component is laser-cut to your exact specifications for a perfect fit every time.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md text-center card-hover transition-all">
+                    <div class="text-4xl text-secondary mb-4">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Flat Pack Delivery</h3>
+                    <p class="text-gray-600">Our efficient flat pack system saves you money on shipping and makes handling easy.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md text-center card-hover transition-all">
+                    <div class="text-4xl text-secondary mb-4">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Simple Assembly</h3>
+                    <p class="text-gray-600">Designed for easy DIY assembly with clear instructions and all hardware included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-16 wood-texture text-white">
+        <div class="bg-black bg-opacity-70 py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Our Custom Cabinetry Services</h2>
+                    <div class="w-24 h-1 bg-secondary mx-auto"></div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm border border-gray-600 card-hover transition-all">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">Kitchen Cabinets</h3>
+                        <p class="mb-4">Custom kitchen cabinets designed to maximize your space and match your style.</p>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Shaker, flat panel, or custom designs</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Soft-close hardware standard</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Variety of finishes and materials</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm border border-gray-600 card-hover transition-all">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">Bathroom Vanities</h3>
+                        <p class="mb-4">Water-resistant cabinetry designed for humid environments.</p>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Custom sizes to fit any space</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Integrated sink options</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Moisture-resistant finishes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm border border-gray-600 card-hover transition-all">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">Wardrobes & Storage</h3>
+                        <p class="mb-4">Custom storage solutions for bedrooms, offices, and more.</p>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Walk-in wardrobe systems</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Adjustable shelving</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Integrated lighting options</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm border border-gray-600 card-hover transition-all">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">Home Office</h3>
+                        <p class="mb-4">Built-in desks, bookshelves, and storage for productive workspaces.</p>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Cable management solutions</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Floating desk options</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Customizable configurations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm border border-gray-600 card-hover transition-all">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">Entertainment Units</h3>
+                        <p class="mb-4">Custom media centers designed for your space and equipment.</p>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Cable access points</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Ventilation for electronics</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Adjustable shelving</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm border border-gray-600 card-hover transition-all">
+                        <h3 class="text-xl font-bold mb-3 text-secondary">Commercial Solutions</h3>
+                        <p class="mb-4">Custom cabinetry for retail, offices, and hospitality spaces.</p>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-check text-secondary mr-2"></i> High-traffic durability</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Custom branding options</li>
+                            <li><i class="fas fa-check text-secondary mr-2"></i> Bulk order discounts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Our Simple 5-Step Process</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-secondary transform -translate-x-1/2"></div>
+                
+                <!-- Process steps -->
+                <div class="space-y-16 md:space-y-0">
+                    <!-- Step 1 -->
+                    <div class="relative md:flex items-center mb-16">
+                        <div class="md:w-1/2 md:pr-16 text-right">
+                            <div class="bg-white p-8 rounded-lg shadow-md">
+                                <div class="text-secondary text-2xl font-bold mb-2">Step 1</div>
+                                <h3 class="text-xl font-bold mb-3">Consultation & Design</h3>
+                                <p class="text-gray-600">Share your vision with our design team. We'll discuss your space, needs, style preferences, and budget to create the perfect solution.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-secondary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">1</div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative md:flex items-center mb-16">
+                        <div class="md:w-1/2"></div>
+                        <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-secondary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">2</div>
+                        <div class="md:w-1/2 md:pl-16">
+                            <div class="bg-white p-8 rounded-lg shadow-md">
+                                <div class="text-secondary text-2xl font-bold mb-2">Step 2</div>
+                                <h3 class="text-xl font-bold mb-3">Precision Measurements</h3>
+                                <p class="text-gray-600">We'll either guide you through taking accurate measurements or arrange for one of our specialists to visit your space.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative md:flex items-center mb-16">
+                        <div class="md:w-1/2 md:pr-16 text-right">
+                            <div class="bg-white p-8 rounded-lg shadow-md">
+                                <div class="text-secondary text-2xl font-bold mb-2">Step 3</div>
+                                <h3 class="text-xl font-bold mb-3">Material Selection</h3>
+                                <p class="text-gray-600">Choose from our premium selection of materials, finishes, and hardware to match your style and functional requirements.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-secondary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">3</div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="relative md:flex items-center mb-16">
+                        <div class="md:w-1/2"></div>
+                        <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-secondary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">4</div>
+                        <div class="md:w-1/2 md:pl-16">
+                            <div class="bg-white p-8 rounded-lg shadow-md">
+                                <div class="text-secondary text-2xl font-bold mb-2">Step 4</div>
+                                <h3 class="text-xl font-bold mb-3">Precision Cutting & Packing</h3>
+                                <p class="text-gray-600">Our state-of-the-art CNC machines cut all components to exact specifications, then carefully packed for safe delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="relative md:flex items-center">
+                        <div class="md:w-1/2 md:pr-16 text-right">
+                            <div class="bg-white p-8 rounded-lg shadow-md">
+                                <div class="text-secondary text-2xl font-bold mb-2">Step 5</div>
+                                <h3 class="text-xl font-bold mb-3">Delivery & Assembly</h3>
+                                <p class="text-gray-600">Your flat pack cabinetry arrives with all necessary hardware and clear assembly instructions. DIY or we can recommend installers.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-16 h-16 rounded-full bg-secondary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">5</div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Our Work</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern kitchen" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Contemporary Kitchen</h3>
+                        <p class="text-gray-700 text-base">Flat panel cabinets with integrated handles in matte white finish.</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ce1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2032&q=80" alt="Bathroom vanity" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Sleek Bathroom Vanity</h3>
+                        <p class="text-gray-700 text-base">Custom walnut vanity with integrated sink and soft-close drawers.</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" alt="Walk-in wardrobe" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Walk-in Wardrobe</h3>
+                        <p class="text-gray-700 text-base">Custom storage system with hanging space, drawers and shoe racks.</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1585634917202-6f03b28fc6d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Home office" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Home Office</h3>
+                        <p class="text-gray-700 text-base">Built-in desk and shelving unit with cable management.</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1556909114-44e1cd42c8ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Entertainment unit" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Media Center</h3>
+                        <p class="text-gray-700 text-base">Custom entertainment unit with adjustable shelving and lighting.</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Laundry room" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-110">
+                    <div class="px-6 py-4">
+                        <h3 class="font-bold text-xl mb-2">Laundry Room</h3>
+                        <p class="text-gray-700 text-base">Custom cabinetry with folding space and storage for cleaning supplies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm border border-gray-600">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"The kitchen cabinets fit perfectly and were so easy to assemble. The quality is outstanding and we saved thousands compared to traditional custom cabinets."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-500 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah J." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah J.</h4>
+                            <p class="text-gray-300 text-sm">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm border border-gray-600">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"As a contractor, I love using PrecisionCraft for my clients. The flat pack system saves me time on site, and the quality is consistently excellent."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-500 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Mike T." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mike T.</h4>
+                            <p class="text-gray-300 text-sm">General Contractor</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-blur-sm border border-gray-600">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"The custom wardrobe system transformed our awkward bedroom space. The instructions were clear and everything fit together perfectly."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-500 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa & Dan P." class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Lisa & Dan P.</h4>
+                            <p class="text-gray-300 text-sm">Homeowners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Get Your Custom Quote</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-primary text-white p-8">
+                            <h3 class="text-2xl font-bold mb-6">Let's Create Something Beautiful</h3>
+                            <p class="mb-8">Fill out the form to get started with your custom cabinetry project. Our team will review your information and contact you within 24 hours.</p>
+                            
+                            <div class="mb-6">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-phone-alt mr-4 text-secondary"></i>
+                                    <span>07 4635 6095</span>
+                                </div>
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-envelope mr-4 text-secondary"></i>
+                                    <span>mickwilkinson@aqkb.com.au</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-map-marker-alt mr-4 text-secondary"></i>
+                                    <span>1/5-7 Spalding St, Harristown QLD 4350</span>
+                                </div>
+                            </div>
+                            
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-all">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-all">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-all">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-all">
+                                    <i class="fab fa-houzz"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 p-8">
+                            <form id="quoteForm">
+                                <div class="mb-4">
+                                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" required>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" required>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="phone" class="block text-gray-700 font-bold mb-2">Phone</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="project" class="block text-gray-700 font-bold mb-2">Project Type</label>
+                                    <select id="project" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary">
+                                        <option value="">Select project type</option>
+                                        <option value="kitchen">Kitchen Cabinets</option>
+                                        <option value="bathroom">Bathroom Vanity</option>
+                                        <option value="wardrobe">Wardrobe/Closet</option>
+                                        <option value="office">Home Office</option>
+                                        <option value="entertainment">Entertainment Unit</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="message" class="block text-gray-700 font-bold mb-2">Project Details</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="w-full bg-secondary hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg transition-all">
+                                    Request Quote
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold bg-gray-50 hover:bg-gray-100 transition-all flex justify-between items-center">
+                            <span>How accurate do my measurements need to be?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 py-4 hidden">
+                            <p>We recommend measurements be accurate to within 1/8 inch. Our design team can help verify your measurements if needed, or we can arrange for a professional measurement service for an additional fee.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold bg-gray-50 hover:bg-gray-100 transition-all flex justify-between items-center">
+                            <span>What's included in the flat pack delivery?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 py-4 hidden">
+                            <p>Your flat pack includes all pre-cut cabinet components, doors, drawers, shelves, and all necessary hardware (hinges, handles, screws, etc.). We also include detailed assembly instructions with diagrams.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold bg-gray-50 hover:bg-gray-100 transition-all flex justify-between items-center">
+                            <span>How difficult is the assembly process?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 py-4 hidden">
+                            <p>Our cabinets are designed for straightforward assembly with basic tools (drill, screwdriver, level). Most customers with moderate DIY skills can assemble them in a weekend. We also offer video tutorials and phone support if you get stuck.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold bg-gray-50 hover:bg-gray-100 transition-all flex justify-between items-center">
+                            <span>What materials do you offer?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 py-4 hidden">
+                            <p>We offer a range of materials including plywood (various grades), MDF, solid wood (oak, maple, walnut), and melamine. Each material has different price points and characteristics that we can discuss during your consultation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full px-6 py-4 text-left font-bold bg-gray-50 hover:bg-gray-100 transition-all flex justify-between items-center">
+                            <span>How long does the process take from order to delivery?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-6 py-4 hidden">
+                            <p>Typical lead time is 3-5 weeks depending on project complexity and material availability. Simple projects can sometimes be completed in 2 weeks, while very large or complex projects may take up to 6 weeks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Space?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Get started with your custom cabinetry project today. Request a free quote and our design team will help bring your vision to life.</p>
+            <a href="#contact" class="bg-white text-secondary hover:bg-primary hover:text-white px-8 py-4 rounded font-bold transition-all inline-block">
+                Get Your Free Quote
+            </a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-ruler-combined text-2xl text-accent"></i>
+                        <span class="text-xl font-bold">AffordableQuality<span class="text-secondary">FlatPacks</span></span>
+                    </div>
+                    <p class="mb-4">Custom cut-to-size flat pack cabinetry for homes and businesses.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-all">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-secondary transition-all">
+                            <i class="fab fa-houzz"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-secondary transition-all">Home</a></li>
+                        <li><a href="#services" class="hover:text-secondary transition-all">Services</a></li>
+                        <li><a href="#process" class="hover:text-secondary transition-all">Our Process</a></li>
+                        <li><a href="#gallery" class="hover:text-secondary transition-all">Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-secondary transition-all">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-secondary transition-all">Kitchen Cabinets</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-all">Bathroom Vanities</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-all">Wardrobes</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-all">Home Office</a></li>
+                        <li><a href="#" class="hover:text-secondary transition-all">Commercial Solutions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2 text-secondary"></i> 1/5-7 Spalding St, Harristown QLD 4350</p>
+                        <p class="mb-2"><i class="fas fa-phone-alt mr-2 text-secondary"></i> 07 4635 6095</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2 text-secondary"></i> mickwilkinson@aqkb.com.au</p>
+                        <p><i class="fas fa-clock mr-2 text-secondary"></i> Mon-Fri: 9am-5pm</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 AffordableQualityFlatPacks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // FAQ accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                icon.classList.toggle('rotate-180');
+                
+                // Close other open answers
+                faqQuestions.forEach(q => {
+                    if (q !== question) {
+                        q.nextElementSibling.classList.add('hidden');
+                        q.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+        
+        // Form submission
+        const quoteForm = document.getElementById('quoteForm');
+        
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const project = document.getElementById('project').value;
+            
+            // In a real application, you would send this data to your server
+            console.log('Form submitted:', { name, email, project });
+            
+            // Show success message
+            alert(`Thanks for your request, ${name}! Our team will contact you shortly about your ${project} project.`);
+            
+            // Reset form
+            quoteForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
