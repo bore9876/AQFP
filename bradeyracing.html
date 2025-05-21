@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bradey Racing | Downhill Mountain Biking Coaching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1564981797819-231a6a1eff04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .trail-card {
+            transition: all 0.3s ease;
+        }
+        
+        .trail-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .coach-card {
+            transition: all 0.3s ease;
+        }
+        
+        .coach-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .parallax {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1600679472829-3044539ce8ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #f59e0b;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-biking text-3xl text-amber-500"></i>
+                    <span class="text-2xl font-bold">Bradey <span class="text-amber-500">Racing</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#programs" class="nav-link">Programs</a>
+                    <a href="#coaches" class="nav-link">Coaches</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden hidden mt-4" id="mobile-menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#programs" class="nav-link">Programs</a>
+                    <a href="#coaches" class="nav-link">Coaches</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Master <span class="text-amber-500">Downhill</span> Mountain Biking</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Join Bradey Racing's professional coaching programs and take your riding to the next level with our expert guidance.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#programs" class="btn-primary bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-8 rounded-full text-lg">View Programs</a>
+                <a href="#contact" class="btn-primary bg-transparent hover:bg-gray-800 border-2 border-white text-white font-bold py-3 px-8 rounded-full text-lg">Book a Session</a>
+            </div>
+        </div>
+        <a href="#about" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-3xl text-white"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Why Choose <span class="text-amber-500">Bradey Racing</span></h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">We're passionate about downhill mountain biking and dedicated to helping riders of all levels improve their skills, confidence, and enjoyment on the trails.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md text-center">
+                    <div class="bg-amber-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-trophy text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Proven Techniques</h3>
+                    <p class="text-gray-600">Our coaching methods are developed from years of professional racing experience and proven to deliver results.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md text-center">
+                    <div class="bg-amber-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mountain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">World-Class Trails</h3>
+                    <p class="text-gray-600">Access to some of the best downhill trails in the region, carefully selected for progressive skill development.</p>
+                </div>
+                
+                <div class="bg-gray-100 p-8 rounded-lg shadow-md text-center">
+                    <div class="bg-amber-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heartbeat text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Safety First</h3>
+                    <p class="text-gray-600">We prioritize your safety with proper technique instruction, protective gear guidance, and risk assessment training.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our <span class="text-amber-500">Programs</span></h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">From complete beginners to advanced racers, we have a program tailored to your skill level and goals.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="trail-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <i class="fas fa-bicycle text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Beginner Downhill</h3>
+                        <p class="text-gray-600 mb-4">Learn the fundamentals of downhill mountain biking in a safe, controlled environment.</p>
+                        <ul class="mb-6 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Bike setup & body position</li>
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Braking & cornering basics</li>
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Trail reading & line selection</li>
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Introduction to small drops</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">$150</span>
+                            <a href="#contact" class="btn-primary bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-full">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trail-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <i class="fas fa-route text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Intermediate Techniques</h3>
+                        <p class="text-gray-600 mb-4">Take your skills to the next level with more technical terrain and advanced techniques.</p>
+                        <ul class="mb-6 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Advanced cornering & berms</li>
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Drop techniques (1-3 feet)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Small jumps & tabletops</li>
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Speed control & pumping</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">$200</span>
+                            <a href="#contact" class="btn-primary bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-full">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trail-card bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-48 bg-gray-300 flex items-center justify-center">
+                        <i class="fas fa-flag-checkered text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Advanced Racing</h3>
+                        <p class="text-gray-600 mb-4">For experienced riders looking to compete or push their limits on extreme terrain.</p>
+                        <ul class="mb-6 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Large drops & gaps (3-6 feet)</li>
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> High-speed technical sections</li>
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Race strategy & mental prep</li>
+                            <li class="flex items-center"><i class="fas fa-check text-amber-500 mr-2"></i> Bike setup for racing</li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold">$250</span>
+                            <a href="#contact" class="btn-primary bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-full">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-bold mb-6">Not sure which program is right for you?</h3>
+                <a href="#contact" class="btn-primary inline-block bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-8 rounded-full text-lg">Get a Free Assessment</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section id="coaches" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Meet Our <span class="text-amber-500">Coaches</span></h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Our certified coaches bring years of professional racing and teaching experience to help you progress safely and effectively.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="coach-card bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gray-300 flex items-center justify-center">
+                        <i class="fas fa-user text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2">Mike Bradey</h3>
+                        <p class="text-amber-500 font-semibold mb-4">Founder & Head Coach</p>
+                        <p class="text-gray-600 mb-4">15+ years of professional downhill racing with multiple national championships. Specializes in advanced techniques and race preparation.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-amber-500"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-amber-500"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-amber-500"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="coach-card bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gray-300 flex items-center justify-center">
+                        <i class="fas fa-user text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2">Sarah Johnson</h3>
+                        <p class="text-amber-500 font-semibold mb-4">Intermediate Coach</p>
+                        <p class="text-gray-600 mb-4">Former enduro racer turned coach with a passion for teaching proper technique and building rider confidence on technical terrain.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-amber-500"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-amber-500"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-amber-500"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="coach-card bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gray-300 flex items-center justify-center">
+                        <i class="fas fa-user text-6xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-bold mb-2">Carlos Mendez</h3>
+                        <p class="text-amber-500 font-semibold mb-4">Beginner Coach</p>
+                        <p class="text-gray-600 mb-4">Patient and encouraging instructor who specializes in introducing new riders to the sport with a focus on safety and fundamentals.</p>
+                        <div class="flex justify-center space-x-4">
+                            <a href="#" class="text-gray-600 hover:text-amber-500"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-amber-500"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-amber-500"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <section class="parallax py-32 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6">Ready to <span class="text-amber-500">Shred</span>?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join our community of passionate riders and take your downhill skills to new heights with professional coaching from Bradey Racing.</p>
+            <a href="#contact" class="btn-primary inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-8 rounded-full text-lg">Book Your Session Today</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Rider <span class="text-amber-500">Testimonials</span></h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Don't just take our word for it - hear what our riders have to say about their experience with Bradey Racing.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-2xl text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Jamie L.</h4>
+                            <p class="text-amber-500 text-sm">Beginner Program</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"I was nervous about trying downhill, but Carlos made me feel completely at ease. After just three sessions, I'm tackling trails I never thought possible!"</p>
+                    <div class="mt-4 text-amber-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-2xl text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Tom R.</h4>
+                            <p class="text-amber-500 text-sm">Intermediate Program</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Sarah completely transformed my cornering technique. I'm carrying so much more speed through turns now. The difference is night and day!"</p>
+                    <div class="mt-4 text-amber-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-2xl text-gray-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Alex K.</h4>
+                            <p class="text-amber-500 text-sm">Advanced Program</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Mike's race prep coaching helped me shave 8 seconds off my local DH course time. Qualified for nationals thanks to his training!"</p>
+                    <div class="mt-4 text-amber-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Get In <span class="text-amber-500">Touch</span></h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-3xl mx-auto">Have questions about our programs or ready to book a session? Contact us today and we'll get back to you within 24 hours.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                        </div>
+                        
+                        <div>
+                            <label for="program" class="block text-gray-700 font-medium mb-2">Program Interest</label>
+                            <select id="program" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                                <option value="">Select a program</option>
+                                <option value="beginner">Beginner Downhill</option>
+                                <option value="intermediate">Intermediate Techniques</option>
+                                <option value="advanced">Advanced Racing</option>
+                                <option value="not-sure">Not sure - need advice</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg text-lg">Send Message</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-amber-500 w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Location</h4>
+                                    <p class="text-gray-600">123 Mountain Trail Rd<br>Boulder, CO 80302</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-500 w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-phone-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p class="text-gray-600">(720) 555-0192</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-500 w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-600">info@bradeyracing.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-500 w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 9am - 6pm<br>Saturday: 8am - 4pm<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-800 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-gray-800 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-gray-800 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="bg-gray-800 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-500 transition-colors">
+                                    <i class="fab fa-strava"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-biking text-3xl text-amber-500"></i>
+                        <span class="text-2xl font-bold">Bradey <span class="text-amber-500">Racing</span></span>
+                    </div>
+                    <p class="text-gray-400">Professional downhill mountain biking coaching for riders of all levels.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-amber-500 transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-amber-500 transition-colors">About Us</a></li>
+                        <li><a href="#programs" class="text-gray-400 hover:text-amber-500 transition-colors">Programs</a></li>
+                        <li><a href="#coaches" class="text-gray-400 hover:text-amber-500 transition-colors">Coaches</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-amber-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Programs</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">Beginner Downhill</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">Intermediate Techniques</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">Advanced Racing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">Private Coaching</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">Group Clinics</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get updates on new programs, events, and riding tips.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-900 w-full">
+                        <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Bradey Racing. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-amber-500 transition-colors">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const program = document.getElementById('program').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this data to a server
+            // For this example, we'll just show an alert
+            alert(`Thanks for your message, ${name}! We'll get back to you soon about ${program ? 'our ' + program + ' program' : 'your inquiry'}.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
